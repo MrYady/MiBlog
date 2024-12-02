@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+}
+
+ul{
+    position: absolute;
+    top: 40px;
+    left: 30px;
+}
+
+ul li{
+    list-style: none;
+    font-size: 30px;
+}
+
+ul li a{
+    color: black;
+
+}
+
+header{
+    width: 80%;
+    margin: 60px auto;
+}
+
+header h2{
+
+    text-align: center;
+}
+
+header .txt{
+    margin: 50px;
+    width: 60%;
+}
+
+header .txt a{
+    margin-top: 20px;
+}

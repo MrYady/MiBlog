@@ -12,46 +12,107 @@ body{
 
 a{
     text-decoration: none;
+    color: #b0d6b8;
 }
 
 /* MENU */
 
+.btnsmenu button{
+    position: fixed;
+    background-color: #2870402c;
+    padding: 10px;
+    border: none;
+    color: #06811b;
+    left: 30px;
+    top: 30px;
+    font-size: 30px;
+    z-index: 2;
+    transition: all 200ms ease allow-discrete;
+}
+
+.btnsmenu .btnmenux{
+    z-index: 100;
+    color: #b0d6b8;
+    top: 10px;
+    left: 10px;
+}
+
+.navBotones{
+    opacity: 5%;
+    display: none;
+}
+
+
 nav{
-    width: 100vw;
-    height: 10vh;
+    width: 0%;
+    height: 100vh;
     align-content: center;
     justify-items: center;
-    background-color: #1ea57f;
+    background-color: #188062;
     position: fixed;
     top: 0;
     overflow: hidden;
-    animation: menu_display  both;
-    animation-timeline: scroll(root); /* ANIMACION CON SCROLL DE PANTALLA*/
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 3px 0px 30px #000;
+    z-index: 90;
+    transition: all .5s ease;
+}
+
+.opennavs{
+    width: 20%;
 }
 
 nav ul{
+    width: 100%;
     display: flex;
-    gap: 10px;
+    flex-direction: column;
     list-style: none;
-    font-size: 14px;
+    font-size: 20px;
+}
+
+.arrow{
+    display: flex;
+    align-content: center;
+    padding: 5%;
+    justify-content: space-between;
+    height: 30%;
+    border-bottom: 1px solid #287040; 
 }
 
 nav ul li .fa-solid{
-    align-items: center;
+    align-content: center;
+    justify-content: end;
     margin-left: 5px;
     font-size: 14px;
+    transform: rotateZ(90deg);
 }
+
+nav .menu .submenu{
+    margin-left: 20px;
+    border-left: 1px solid #287040;
+    height: 0;
+    overflow: hidden;
+    transition: all .2s ease;
+}
+
+nav .menu .openmenu{
+    height: 100%;
+}
+
+nav .menu .submenu li a{
+    font-size: 16px;
+}
+
 
 
 /* HEADER */
 
 header{
-    width: 60%;
-    height: 200vh;
-    padding: 20px;
-    margin: 5% auto;
+    width: 100%;
+    height: 100vh;
+    align-content: center;
+    justify-items: center;
 }
-
 
 header h1{
     font-size: 24px;
@@ -59,67 +120,309 @@ header h1{
 }
 
 header .portada{
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: 1fr max-content;
+    position: relative;
+    display: flex; 
+    width: 80%;
+    height: 70%; 
 }
+
+header .portada .textoportada{
+    background-color: #10b94391;
+    width: 70%;
+    height: 40%;
+    text-align: center;
+    align-content: center;
+    z-index: 1;
+    margin: auto;
+    padding: 10px; 
+}
+
+header .portada .textoportada .frase{
+    margin: 5px;
+    color: #263528;
+    font-size: 16px;
+}
+
+header .portada .textoportada .autor{
+    text-align: end;
+    font-size: 14px;
+    color: #648b69;
+
+}
+
 
 header .portada img{
-    width: 300px;
+    width: 450px;
+    position: absolute;
+    right: 0;
 }
 
-header .contribucion{
-    align-content: end;
+header .senal{
+    display: flex;
+    flex-direction: column;
 }
 
-header .portada p, header .portada hr{
-    font-size: 12px;
-    width: 90%;
+header .senal .fa-solid{
+    font-size: 35px;
+    color: #10b94391;
+    opacity: 55%;
+}
+
+
+/* INTRODUCCIÓN*/
+
+.introduccion{
+    width: 100%;
+    height: 98vh;
+    box-shadow: 0px 5px 15px #000;
+    padding-top: 2vh;
+}
+
+.introduccion h2{
+    color: #188062;
+    margin: 15px;
+}
+
+.intro{
+    width: 60%;
+    margin:  5% auto;
+    text-align: center;
+    display: flex;
+    gap: 20px;
+}
+
+.intro .text p{
+    text-align: justify;
 }
 
 
 /* DESARROLLO */
-
-header .desarrollo p{
-    font-size: 15px;
-    text-align: justify;
-    font-weight: 400;
+.desarrollo{
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
 }
 
-header .desarrollo img{
-    width: 70%;
-    margin: 0 calc(50% - 35%) ;
-}
-
-header .desarrollo ol{
-    font-size: 14px;
-    width: 90%;
-    margin: 15px auto;
-}
-
-header .desarrollo ol li{
+.desarrollo h1{
     margin: 10px;
+    color: #188062;
 }
 
-header .desarrollo mark{
-    background-color: #aed6f1 ;
+.desarrollo .pOne{
+    text-align: justify;
+    width: 80%;
+    margin: 5% auto;
+}
+
+.desarrollo p mark{
+    background-color: #b0d6b8;
+}
+
+.desarrollo img{
+    width: 50%;
+}
+
+.desarrollo .ptwo{
+    text-align: justify;
+    width: 80%;
+    margin: 5% auto;
+}
+
+.desarrollo .ptwo h3{
+    margin: 5px 2%;
+}
+
+.desarrollo ul{
+    text-align: justify;
+    width: 60%;
+    margin: 5% auto;
+    border-radius: 20px;
+    padding: 5px;
+    border: 10px ridge #21bb64;
+    background-color: #18804f;
+    color: rgb(174, 241, 216);
+}
+
+.desarrollo ul li{
+    margin: 20px;
+}
+
+
+.desarrollo .pthree{
+    text-align: justify;
+    width: 80%;
+    margin: 5% auto;
+}
+
+.desarrollo .pthree h3{
+    margin: 5px 2%;
+}
+
+.pfuor h3{
+    text-align: center;
+    margin: 20px;
+}
+
+.soluciones{
+    width: 90%;
+    height: 60vh;
+    margin: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.slidersItems{
+    width: 100%;
+    height: 100%;
+    background-color: #06811b2d;
+    align-content: end;
+}
+
+.slidersItems h4{
+    background-color: #287231;
+    color: rgb(174, 241, 216);
+    padding: 10px;
+    font-size: large;
+}
+
+
+.democracia{
+    text-align: center;
+}
+
+.democracia h1{
+    background-image: url(../img/democracia.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #000;
+    text-align: left;
+    width: 50%;
+    height: 50vh;
+    background-color: rgb(148, 31, 31);
+    margin: 150px auto 20px auto;
+}
+
+
+.democracia .text{
+    width: 70%;
+    margin: auto;
+}
+
+.democracia .text p{
+    text-align: justify;
+}
+
+
+
+
+
+/*CONCLUCION*/
+
+.conclucion{
+    width: 100%;
+    height: 70vh;
+    box-shadow: 0px -5px 15px #000;
+    animation: conclucion linear both ;
+    animation-timeline: view();
+}
+
+.conclucion h1{
+    color: #188062;
+    margin: 20px 0 0 20px;
+}
+
+.conclucion .text{
+    width: 80%;
+    text-align: justify;
+    margin: 30px auto;
+}
+
+
+.gracias{
+    text-align: center;
+    transform: translateY(250%);
+    color: #287231;
 }
 
 /* ANIMACIONES */
 
+@keyframes conclucion{
+    0%{
+        transform: translateY(0%);
+    }
 
-/* MENU "nav" */
-@keyframes menu_display{
-    30%, 100%{
-        height: 6vh;
+    40%{
+        transform: translateY(55%);
     }
 }
+
+/* MENU "nav" */
 
 
 /* MEDIA QUERY RESPONSIVE*/
 
 @media (width < 599px) {
+
+    p{
+        font-size: 2.5vw;
+    }
+
+    .btnsmenu button{
+        left: 10px;
+        top: 10px;
+    }
+
+    
+    header .portada .textoportada{
+        width: 100%;
+    }
+
+    header .portada{
+        width: 100%;
+        margin-bottom: 10%;
+        left: 5%;
+        right: 5%;
+
+    }
+
+
+    header .portada img{
+        display: none;
+    }
+
+    header .portada .textoportada h1{
+        font-size: 3.5vw;
+    }
+
+    .desarrollo ul{
+        width: 85%;
+    }
+
+    li{
+        font-size: 2.5vw;
+    }
+
+    .introduccion{
+        height: 90vh;
+    }
+
     header{
         width: 90%;
+    }
+
+    .opennavs{
+        width: 60%;
+    }
+
+
+
+    .soluciones{
+        flex-direction: column;
+    }
+
+
+    .democracia h1{
+        width: 90%;
+        background-position: center;
     }
 }

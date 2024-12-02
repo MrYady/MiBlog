@@ -17,68 +17,248 @@
 </head>
 
 <body>
-    <nav>
+    <div class="btnsmenu">
+        <Button class="btnmenu" type="button" title="boton"><i class="fa-solid fa-bars"></i></Button>
+        <Button class="btnmenux navBotones" type="button" title="boton"><i
+                class="fa-regular fa-circle-xmark"></i></Button>
+    </div>
+    <nav class="navegation">
         <ul class="menu">
-            <li><a href="#">Inicio</a><i class="fa-solid fa-chevron-down"></i></li>
-            <li><a href="#">Estructura</a><i class="fa-solid fa-chevron-down"></i></li>
-            <li><a href="#">Bibliografia</a><i class="fa-solid fa-chevron-down"></i></li>
-            <li><a href="#">Ayuda</a><i class="fa-solid fa-chevron-down"></i></li>
+            <li class="arrow"><a href="#inicio">Inicio</a></li>
+            <li class="clickmenu" >
+                
+                <div class="arrow">Estructura
+                    <i class="fa-solid icomsubmenu  fa-chevron-down"></i></div>
+                <ul class="submenu">
+                    <li><a href="#inicio">Portada</a></li>
+                    <li><a href="#introduccion">Introducción</a></li>
+                    <li><a href="#desarrollo">Desigualdad social</a></li>
+                    <li><a href="#democracia">democracia y el socialismo</a></li>
+                    <li><a href="#conclucion">Conclución</a></li>
+                </ul>
+            </li>
+
+            <li class="arrow"><a href="/static/html/blibliografia.html">Bibliografia</a></li>
+            <li class="arrow"><a href="#">Ayuda</a></li>
         </ul>
     </nav>
-    <header>
-        <h1>LA DESIGUALDAD SOCIAL DE LAS RIQUEZAS Y EL DESARROLLO DE LA DEMOCRACIA Y EL SOCIALISMO EN EL MUNDO DE HOY.
-        </h1>
-
+    <header class="inicio" id="inicio">
         <div class="portada">
-            <div class="contribucion">
-                <p>Creado por Yadier Santana Rosario</p>
-                <hr>
+            <div class="textoportada">
+                <h1>LA DESIGUALDAD SOCIAL DE LAS RIQUEZAS Y EL DESARROLLO DE LA DEMOCRACIA Y EL SOCIALISMO EN EL MUNDO
+                    DE HOY.
+                </h1>
+                <p class="frase">"El hombre nace libre, pero en todos lados está encadenado"</p>
+                <p class="autor">-jean jacques rousseau</p>
             </div>
-            <img src="static/img/frase.png" alt="">
+            <img src="static/img/balanza-R-P.png" alt="">
         </div>
+        <div class="senal">
+            <i class="fa-solid fa-angles-down"></i>
+        </div>
+    </header>
 
-        <div class="introduccion">
-            <h2>Introducción</h2>
+
+    <div class="introduccion" id="introduccion ">
+        <div class="intro">
+            <div class="text">
+                <h2>Introducción</h2>
+                <p>
+                    En un mundo caracterizado por la creciente concentración de la riqueza y profundas brechas
+                    económicas,
+                    sociales y políticas, comprender la desigualdad social se ha vuelto esencial.
+                </p>
+                <br>
+                <p>
+                    En este blog se aborda temas como el impacto de las políticas en la desigualdad económica, el
+                    papel del capitalismo en la concentración de la riqueza y la influencia de los movimientos sociales,
+                    Asimismo, se analizan las intersecciones entre desigualdad y democracia, destacando cómo la falta de
+                    equidad puede limitar la
+                    representación política y erosionar los valores democráticos.
+                </p>
+                <br>
+                <p>
+                    A través de un enfoque multidimensional, el portal combina datos actuales, estudios académicos y
+                    análisis críticos para ofrecer una visión completa de los retos y oportunidades que enfrentamos como
+                    sociedad global. En un tiempo donde las crisis económicas, ambientales y sociales exigen soluciones
+                    inclusivas, este sitio invita a reflexionar sobre cómo construir un mundo más justo, equitativo y
+                    solidario.
+                </p>
+            </div>
         </div>
-        <!-- DESARROLLO -->
-        <div class="desarrollo">
-            <h3>La desigualdad social</h3>
-            <br>    
-            <p><mark><b>La desigualdad social</b>                
-                es una condición estructural que se manifiesta en las diferencias de acceso a recursos,
-                oportunidades y derechos entre las personas o grupos dentro de una sociedad,</mark>
-                tanto, dentro de un país como entre países de una misma región, e incluso entre diferentes
-                regiones del mundo. Algunas poblaciones se ven favorecidas, mientras que otras quedan injustamente
-                desfavorecidas. Esta problemática ha sido una de las más antiguas y persistentes a lo largo de la
-                historia de la humanidad a pesar de los avances sociales y económicos.
-            </p>
+    </div>
+
+    <!-- DESARROLLO -->
+    <div class="desarrollo" id="desarrollo">
+        <h1>Desigualdad social</h1>
+
+        <p class="pOne">
+            <b>Que es la desigualdad social?</b>
             <br>
-                <img src="static/img/desigualdad-social.png" alt="">
+            <br>
+            <mark><b>La desigualdad social</b>
+                es una condición estructural que se manifiesta en las diferencias de acceso a recursos,
+                oportunidades y derechos entre las personas o grupos dentro de una sociedad,
+                tanto, dentro de un país como entre países de una misma región, e incluso entre diferentes
+                regiones del mundo.</mark> Algunas poblaciones se ven favorecidas, mientras que otras quedan
+            injustamente
+            desfavorecidas. Esta problemática ha sido una de las más antiguas y persistentes a lo largo de
+            la
+            historia de la humanidad a pesar de los avances sociales y económicos.
+        </p>
+        <img src="static/img/desigualdad-social.png" alt="">
+        <div class="ptwo">
+            <h3>Origen</h3>
+            <p>
+                La <b>primera manifestación de desigualdad social</b> se remonta al surgimiento de las primeras
+                sociedades
+                agrícolas,
+                hace aproximadamente 10.000 años, durante el período Neolítico. Con el desarrollo de la agricultura
+                y la
+                sedentarización,
+                las comunidades humanas comenzaron a producir excedentes de alimentos, lo que permitió la
+                acumulación de
+                bienes y recursos. el humano que tenía tierras más fértiles y que producía mas y mejor alimento tenia
+                poder
+                sobre aquellos que no tenían esos recursos. Esto desde esa era ya creaba una brecha en la población de
+                ese
+                entonces lo que causaba una desigualdad con el alimento y como el alimento era la moneda de ese entonces
+                para muchas civilizaciones da como resultado la desigualdad económica.
+            </p>
+        </div>
+        <br>
+        <h4>Factores clave que originaron la desigualdad:</h4>
+        <ul>
+            <li><b>Propiedad privada:</b> Los excedentes llevados al establecimiento de la propiedad privada, lo
+                que
+                dio
+                lugar a diferencias en la cantidad de recursos que las personas o familias podían poseer.</li>
+            <li><b>Jerarquías sociales:</b> A medida que las sociedades crecían, surgieron roles especializados,
+                como
+                gobernantes, sacerdotes, guerreros y agricultores, lo que marcó el inicio de las jerarquías
+                sociales
+                .
+            </li>
+            <li><b>Control de recursos:</b> Algunas personas o grupos comenzaron a controlar tierras fértiles,
+                agua
+                y
+                otros recursos esenciales, consolidando su poder y riqueza.</li>
+        </ul>
+
+        <div class="pthree">
+            <h3>Consecuencias y posibles soluciones:</h3>
+            <p>
+                Concretamente la desigualdad social impacta de manera muy negativa a los distintos sectores que la
+                padecen, en este sentido podemos ver lo que es la perpetuación de la pobreza, el afianzamiento del
+                resentimiento y la necesidad de las revoluciones.
+            </p>
             <br>
             <p>
-                La <b>primera manifestación de desigualdad social</b> se remonta al surgimiento de las primeras sociedades agrícolas,
-                hace aproximadamente 10.000 años, durante el período Neolítico. Con el desarrollo de la agricultura y la sedentarización,
-                las comunidades humanas comenzaron a producir excedentes de alimentos, lo que permitió la acumulación de bienes y recursos.
+                Esto trae otros tipos de consecuencias como los es que los pobres no tienen las oportunidades de
+                desarrollarse, de tener una educación de calidad y esto conlleva que las personas sigan en la
+                marginalidad y que las familias no puedan escalar a nivel social.
             </p>
-            
             <br>
-            <h4>Factores clave que originaron la desigualdad:</h4>
-            <ol>
-                <li><b>Propiedad privada:</b> Los excedentes llevados al establecimiento de la propiedad privada, lo que dio lugar a diferencias en la cantidad de recursos que las personas o familias podían poseer.</li>
-                <li><b>Jerarquías sociales:</b> A medida que las sociedades crecían, surgieron roles especializados, como gobernantes, sacerdotes, guerreros y agricultores, lo que marcó el inicio de las jerarquías sociales .</li>
-                <li><b>Control de recursos:</b> Algunas personas o grupos comenzaron a controlar tierras fértiles, agua y otros recursos esenciales, consolidando su poder y riqueza.</li>
-            </ol>
+            <p>
+                Cuando los oprimidos no reciben los servicios de calidad que merecen, cuando no reciben una buena
+                educación y las condiciones optimas para su desarrollo, esto acrecienta mas el nivel de desigualdad en
+                la sociedad y esto va creando lo que es un rencor social, que luego desencadena en trifulcas y las
+                llamadas revoluciones.
+            </p>
         </div>
-        <div class="conclucion">
-            <h2>Conclución</h2>
+        <div class="pfuor">
+            <h3>Posibles Soluciones</h3>
+            <div class="soluciones">
+                <div class="slidersItems itemsOne">
+                    <h4> Creación de sistemas fiscales justos</h4>
+                </div>
+                <div class="slidersItems itemsTwo">
+                    <h4>Mejorar el acceso a recursos públicos</h4>
+                </div>
+                <div class="slidersItems itemsThree">
+                    <h4>Reducir las brechas salariales</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="democracia" id="democracia">
+            <h1></h1>
+            <h2>democracia y el socialismo</h2>
+            <br>
+            <br>
+            <br>
+            <div class="text">
+                <p>La democracia es un bien social complejo, sostenido como una bandera por buena parte de nuestra
+                    sociedad, sobre el que no existen evaluaciones objetivas acerca de dónde estamos, cómo vamos en ese
+                    tránsito hacia un ideal democrático y qué podemos hacer para mejorar ese camino.</p>
+                <br>
+                <p>
+                    El Desarrollo Democrático es el proceso por el cual el sistema político, con todos sus actores
+                    institucionales y sociales construye soluciones que le permiten acercarse más a los fines de la
+                    democracia.
+                </p>
+                <br>
+                <div class="Socialismo">
+                    <br>
+                    <h3>El Socialismo en el Mundo Contemporáneo</h3>
+                    <br>
+                    <p>El socialismo, desde sus orígenes con Marx y Engels, ha sido una ideología destinada a superar
+                        las desigualdades del capitalismo. Sin embargo, en el siglo XXI, enfrenta retos significativos:
+                        la globalización, el avance tecnológico, y la polarización política global. Este blog explora
+                        cómo esta ideología sigue vigente y cómo se adapta a un mundo en constante cambio.
+                    </p>
+                    <br>
+                    <h4>¿Qué significa el socialismo hoy?</h4>
+                    <br>
+                    <p>En el mundo contemporáneo, el socialismo ha evolucionado en modelos híbridos que combinan
+                        economías de mercado con sistemas de bienestar social robustos, como los observados en los
+                        países nórdicos. Aunque no se definen como socialistas, estas naciones adoptan principios como
+                        la redistribución equitativa y acceso universal a servicios básicos</p>
+
+                    <br>
+                    <br>
+                    <br>
+                    <h3>Ejemplos actuales:</h3>
+                    <ul>
+                        <li>Cuba: Un modelo centralizado que prioriza la salud y la educación, pero enfrenta bloqueos
+                            económicos y falta de diversificación industrial.</li>
+                        <li>Venezuela: Ha transitado por un socialismo enfocado en la redistribución de la riqueza
+                            petrolera, aunque con serios desafíos económicos como la hiperinflación.</li>
+                        <li>China: Un modelo único que mezcla una economía socialista de mercado con un fuerte control
+                            estatal.</li>
+                    </ul>
+
+                </div>
+            </div>
         </div>
 
 
 
+    </div>
+        <h1 class="gracias">Gracias por visitarnos</h1>
 
+    <div class="conclucion" id="conclucion">
+        <h1>Conclución</h1>
+        <div class="text ">
+            <p>La desigualdad social en la distribución de la riqueza sigue siendo uno de los desafíos más complejos en
+                la sociedad contemporánea. A medida que las brechas económicas se amplían, se hace evidente que este
+                problema afecta no solo la calidad de vida de millones de personas, sino también la estabilidad de los
+                sistemas democráticos y las propuestas socialistas en su búsqueda de justicia e igualdad.
+            </p>
+            <br>
+            <p>
+                El análisis de esta temática revela que, aunque la democracia y el socialismo ofrecen enfoques
+                distintos, ambos comparten un objetivo común: garantizar que las oportunidades y recursos sean más
+                equitativos.</p>
+                <br>
+                <p>
+                    En última instancia, enfrentar la desigualdad requiere voluntad política, participación ciudadana y un enfoque equilibrado entre las aspiraciones democráticas y los ideales socialistas. La construcción de un mundo más justo no solo depende de sistemas económicos y políticos sólidos, sino también de una sociedad que prioriza la equidad como un valor esencial para el desarrollo global.
+                </p>
+        </div>
+    </div>
 
-
-    </header>
 </body>
+<script src="/static/js/script.js"></script>
+
 
 </html>
