@@ -15,12 +15,41 @@ a{
     color: #b0d6b8;
 }
 
+p{
+    font-size: 1.2vw;
+}
+
+
+/* ANIMACIONES */
+
+@keyframes conclucion{
+    0%{
+        transform: translateY(0%);
+    }
+
+    40%{
+        transform: translateY(55%);
+    }
+}
+
+/* PORTADA */
+@keyframes portada{
+    0%{
+        opacity: 0%;
+    }
+
+    50%{
+        opacity: 1%;
+    }
+}
+
+
 /* MENU */
 
 .btnsmenu button{
     position: fixed;
     background-color: #2870402c;
-    padding: 10px;
+    padding: 6px 10px 6px 10px;
     border: none;
     color: #06811b;
     left: 30px;
@@ -53,7 +82,7 @@ nav{
     top: 0;
     overflow: hidden;
     border-radius: 0px 10px 10px 0px;
-    box-shadow: 3px 0px 30px #000;
+    box-shadow: 5px 0px 10px #383838;
     z-index: 90;
     transition: all .5s ease;
 }
@@ -89,10 +118,18 @@ nav ul li .fa-solid{
 
 nav .menu .submenu{
     margin-left: 20px;
-    border-left: 1px solid #287040;
     height: 0;
     overflow: hidden;
     transition: all .2s ease;
+}
+
+nav .menu .submenu li{
+    margin: 3px;
+    padding-left: 3px;
+    border-bottom: 1px solid #1ab883;
+    border-left: 1px solid #1ab883;
+    border-bottom-left-radius: 5px;
+
 }
 
 nav .menu .openmenu{
@@ -106,7 +143,6 @@ nav .menu .submenu li a{
 
 
 /* HEADER */
-
 header{
     width: 100%;
     height: 100vh;
@@ -135,17 +171,19 @@ header .portada .textoportada{
     z-index: 1;
     margin: auto;
     padding: 10px; 
+    box-shadow: 6px 6px 5px #c0c0c0;
+    animation: portada 1s ease;
 }
 
 header .portada .textoportada .frase{
     margin: 5px;
     color: #263528;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 header .portada .textoportada .autor{
     text-align: end;
-    font-size: 14px;
+    font-size: 16px;
     color: #648b69;
 
 }
@@ -164,7 +202,7 @@ header .senal{
 
 header .senal .fa-solid{
     font-size: 35px;
-    color: #10b94391;
+    color: #263528;
     opacity: 55%;
 }
 
@@ -174,7 +212,7 @@ header .senal .fa-solid{
 .introduccion{
     width: 100%;
     height: 98vh;
-    box-shadow: 0px 5px 15px #000;
+    box-shadow: 0px 5px 15px #c0c0c0;
     padding-top: 2vh;
 }
 
@@ -210,7 +248,7 @@ header .senal .fa-solid{
 
 .desarrollo .pOne{
     text-align: justify;
-    width: 80%;
+    width: 60%;
     margin: 5% auto;
 }
 
@@ -224,23 +262,31 @@ header .senal .fa-solid{
 
 .desarrollo .ptwo{
     text-align: justify;
-    width: 80%;
+    width: 60%;
     margin: 5% auto;
 }
 
 .desarrollo .ptwo h3{
     margin: 5px 2%;
+    color: #188062;
+}
+
+.desarrollo .ptwo h4{
+    color: #188062;
+    text-align: left;
+    font-size: 1.4vw;
+    color: #115e48;
 }
 
 .desarrollo ul{
     text-align: justify;
     width: 60%;
     margin: 5% auto;
-    border-radius: 20px;
-    padding: 5px;
-    border: 10px ridge #21bb64;
-    background-color: #18804f;
-    color: rgb(174, 241, 216);
+    border-radius: 6px;
+    padding: 20px;
+    border: 1px solid #21bb64;
+    color: rgb(0, 32, 21);
+    font-size: 1.2vw;
 }
 
 .desarrollo ul li{
@@ -250,12 +296,19 @@ header .senal .fa-solid{
 
 .desarrollo .pthree{
     text-align: justify;
-    width: 80%;
+    width: 60%;
     margin: 5% auto;
 }
 
 .desarrollo .pthree h3{
     margin: 5px 2%;
+    color: #188062;    
+}
+
+
+.pfuor{
+    width: 65%;
+    margin: auto;
 }
 
 .pfuor h3{
@@ -265,7 +318,7 @@ header .senal .fa-solid{
 
 .soluciones{
     width: 90%;
-    height: 60vh;
+    height: 35vh;
     margin: auto;
     display: flex;
     gap: 10px;
@@ -282,29 +335,50 @@ header .senal .fa-solid{
     background-color: #287231;
     color: rgb(174, 241, 216);
     padding: 10px;
-    font-size: large;
+    font-size: 1.1vw;
 }
+
+
+.itemsOne{
+    background-image: url(../img/7f1f7da018f7cf068ffd115ec2594dc4.png);
+    background-size: cover;
+}
+
+.itemsTwo{
+    background-image: url(../img/598730a35ba5c2af4baa4cbdbcf6d628.png);
+    background-size: cover;
+
+}
+
+.itemsThree{
+    background-image: url(../img/brecha-salarial.png) ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
 
 
 .democracia{
     text-align: center;
 }
 
+.democracia h2{
+    margin-top: 120px;
+}
+
 .democracia h1{
     background-image: url(../img/democracia.png);
     background-repeat: no-repeat;
     background-position: center;
-    color: #000;
     text-align: left;
     width: 50%;
     height: 50vh;
-    background-color: rgb(148, 31, 31);
-    margin: 150px auto 20px auto;
+    margin: 20px auto 50px auto;
 }
 
 
 .democracia .text{
-    width: 70%;
+    width: 60%;
     margin: auto;
 }
 
@@ -312,23 +386,22 @@ header .senal .fa-solid{
     text-align: justify;
 }
 
-
-
-
-
 /*CONCLUCION*/
 
 .conclucion{
     width: 100%;
-    height: 70vh;
-    box-shadow: 0px -5px 15px #000;
+    height: auto;
+    box-shadow: 0px -5px 10px #b9b9b9;
     animation: conclucion linear both ;
     animation-timeline: view();
+    z-index: 100;
+    padding: 5px 0 5px 0;
 }
 
 .conclucion h1{
     color: #188062;
-    margin: 20px 0 0 20px;
+    margin-top: 10px;
+    text-align: center;
 }
 
 .conclucion .text{
@@ -338,30 +411,13 @@ header .senal .fa-solid{
 }
 
 
-.gracias{
-    text-align: center;
-    transform: translateY(250%);
-    color: #287231;
-}
-
-/* ANIMACIONES */
-
-@keyframes conclucion{
-    0%{
-        transform: translateY(0%);
-    }
-
-    40%{
-        transform: translateY(55%);
-    }
-}
-
-/* MENU "nav" */
-
-
 /* MEDIA QUERY RESPONSIVE*/
 
 @media (width < 599px) {
+
+    h1,h3{
+        font-size: 20px;
+    }
 
     p{
         font-size: 2.5vw;
@@ -394,6 +450,11 @@ header .senal .fa-solid{
         font-size: 3.5vw;
     }
 
+    header .portada .textoportada .frase{
+        font-size: 12px;
+    }
+
+
     .desarrollo ul{
         width: 85%;
     }
@@ -415,14 +476,34 @@ header .senal .fa-solid{
     }
 
 
+    .desarrollo .ptwo h4{
+        font-size: 3.5vw;
+    }
 
     .soluciones{
         flex-direction: column;
+        height: 50vh;
     }
 
+
+    .democracia h2{
+        font-size: 3vh;
+        color: rgb(174, 241, 216);
+
+    }
 
     .democracia h1{
-        width: 90%;
+        width: 60%;
+        height: 30vh;
         background-position: center;
     }
+
+
+    .slidersItems h4{
+        background-color: #287231;
+        color: rgb(174, 241, 216);
+        padding: 10px;
+        font-size: 2.1vw;
+    }
+    
 }
